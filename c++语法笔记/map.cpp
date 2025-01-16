@@ -1,13 +1,14 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-
 int main()
 {
-	// multimap基本不会用到
-	// multimap<string, int> temp;
-	
-	// map是常用的
+     /*
+     multimap基本不会用到
+	 multimap<string, int> temp;
+	 map是常用的
+	 */
+
 	map<string, int> a;
 
 	a["yxc"] = 2;

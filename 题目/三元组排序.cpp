@@ -63,6 +63,7 @@ struct Data{
     {
         return x<t.x;
     }
+
 }stu[100];
 /*bool cmp(Data & a,Data & b)
 {

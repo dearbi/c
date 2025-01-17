@@ -17,6 +17,7 @@ int main() {
                 sum[i][j] = sum[i][j] + sum[i - 1][j] + sum[i][j - 1] - sum[i - 1][j - 1];
             }
         }
+
         int res = 0;
         for (int i = 1; i <= m-x+1; i++) {
             for (int j = 1; j <= n-y+1; j++) {

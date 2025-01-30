@@ -21,7 +21,7 @@ int main() {
     sort(s+1, s + n+1);
     double sum=0.0;
     int t[1000]={0};
-    for(int i=2;i<=n;i++)
+    for(int i=2 ;i<=n;i++)
     {
         t[i]=t[i-1]+s[i-1].a;
         sum+=t[i];

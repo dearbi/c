@@ -23,3 +23,25 @@ int main()
 
     return 0;
 }
+
+//#include <bits/stdc++.h>
+//using namespace std;
+//int n, m;
+//const int N = 1e5 + 10;
+//int sum[N];
+//int main()
+//{
+//    cin >> n >> m;
+//    for (int i = 1; i <= n; i++)
+//    {
+//        cin >> sum[i];
+//        sum[i] = sum[i - 1] + sum[i];
+//    }
+//    while (m--)
+//    {
+//        int l, r;
+//        cin >> l >> r;
+//        cout << sum[r] - sum[l - 1] << endl;
+//    }
+//    return 0;
+//}

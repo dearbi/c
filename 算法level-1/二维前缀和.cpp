@@ -22,7 +22,7 @@ int main() {
         for (int i = 1; i <= m-x+1; i++) {
             for (int j = 1; j <= n-y+1; j++) {
                 int x2 = i + x - 1;
-                int y2 = j + y - 1;
+                int y2 = j + y - 1; 
                 int temp = sum[x2][y2] - sum[i - 1][y2] - sum[x2][j - 1] + sum[i - 1][j - 1];
                 res = max(res, temp);
             }

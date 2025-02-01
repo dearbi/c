@@ -39,7 +39,6 @@ void slove()
     sort(b.begin(),b.end());
     b.erase(unique(b.begin(),b.end()),b.end());
 
-
     for(int i=1;i<=n;i++)
     {
         int w=getindex(a[i].x);
@@ -50,6 +49,7 @@ void slove()
     {
         k[i]+=k[i-1];
     }
+
     for(int i=1;i<=q;i++)
     {
         int l= getindex(m[i].x);

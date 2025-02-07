@@ -22,7 +22,7 @@ int main()
     int n;
     cin>>n;
     int temp;
-//    vector<vector<int>> res;
+
     for(int i=0;i<n;i++)
     {
         cin>>temp;

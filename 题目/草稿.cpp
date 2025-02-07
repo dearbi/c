@@ -1,64 +1,77 @@
-#include <bits/stdc++.h>
-#define int long long
+#include <iostream>
+#include <memory> // 包含 shared_ptr 所需的头文件
 using namespace std;
-const int N=2e5+9;
-int n;
 
-struct s{
-    int x,y;
-}a[N],m[N];
+struct ListNode {
+    int data;
+    shared_ptr<ListNode> next; // 使用 shared_ptr 替代原始指针
 
-int k[N*3];
-vector<int> b;
+    // 构造函数
+    ListNode(int x) : data(x), next(nullptr) {}
+};
 
-int getindex(int x)
-{
-    return lower_bound(b.begin(),b.end(),x)-b.begin()+1;
-}
+// 创建链表
+void CreateList(shared_ptr<ListNode>& head, int len) {
+    for (int i = 0; i < len; i++) {
+        int num;
+        cin >> num;
+        // 使用构造函数初始化新节点
+        auto newNode = make_shared<ListNode>(num);
 
-void slove()
-{
-
-    int q;cin>>n>>q;
-    for(int i=1;i<=n;i++)
-    {
-        int w,e;cin>>w>>e;
-        a[i]={w,e};
-        b.push_back(w);
-    }
-
-    for(int i=1;i<=q;i++)
-    {
-        int l,r;cin>>l>>r;
-        m[i]={l,r};
-        b.push_back(l);
-        b.push_back(r);
-    }
-
-    sort(b.begin(),b.end());
-    b.erase(unique(b.begin(),b.end()),b.end());
-
-
-    for(int i=1;i<=n;i++)
-    {
-        int w=getindex(a[i].x);
-        int e=a[i].y;
-        k[w]+=e;
-    }
-    for(int i=1;i<=b.size();i++)
-    {
-        k[i]+=k[i-1];
-    }
-    for(int i=1;i<=q;i++)
-    {
-        int l= getindex(m[i].x);
-        int r= getindex(m[i].y);
-        cout<<k[r]-k[l-1]<<endl;
+        if (!head) {
+            head = newNode;
+        } else {
+            auto p = head;
+            while (p->next) {
+                p = p->next;
+            }
+            p->next = newNode;
+        }
     }
 }
 
-signed main()
-{
-    slove();
+// 合并链表
+void MergeList(const shared_ptr<ListNode>& La, const shared_ptr<ListNode>& Lb, shared_ptr<ListNode>& Lc) {
+    auto dummy = make_shared<ListNode>(0); // 哑节点
+    auto tail = dummy;
+    auto pa = La;
+    auto pb = Lb;
+
+    while (pa && pb) {
+        if (pa->data <= pb->data) {
+            tail->next = pa;
+            pa = pa->next;
+        } else {
+            tail->next = pb;
+            pb = pb->next;
+        }
+        tail = tail->next;
+    }
+
+    // 连接剩余的节点
+    tail->next = pa ? pa : pb;
+
+    // 结果链表是从哑节点的下一个节点开始的
+    Lc = dummy->next;
+}
+
+int main() {
+    int M, N;
+    cin >> M >> N;
+    shared_ptr<ListNode> La = nullptr;
+    CreateList(La, M);
+    shared_ptr<ListNode> Lb = nullptr;
+    CreateList(Lb, N);
+
+    shared_ptr<ListNode> Lc = nullptr;
+    MergeList(La, Lb, Lc);
+
+    auto pc = Lc;
+    while (pc) {
+        cout << pc->data << " ";
+        pc = pc->next;
+    }
+    cout << endl;
+
     return 0;
 }

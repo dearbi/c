@@ -1,3 +1,4 @@
+//题目链接：https://www.starrycoding.com/problem/40
 #include <bits/stdc++.h>
 #define int long long
 using namespace std;

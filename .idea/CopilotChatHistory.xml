@@ -6,8 +6,50 @@
         <Conversation>
           <option name="createTime" value="1743317533640" />
           <option name="id" value="0195e5d283c87ab6a85364bceb1295cf" />
-          <option name="title" value="新对话 2025年3月30日 14:52:13" />
-          <option name="updateTime" value="1743317533640" />
+          <option name="title" value="@terminal &#10;```&#10;[master 39f0dfa] Commit message&#10; 9 " />
+          <option name="turns">
+            <list>
+              <Turn>
+                <option name="agent" value="terminal" />
+                <option name="answer" value="腾讯云 ZR 代码助手&#10;&#10;错误提示显示远程仓库有本地不包含的更改，需要先拉取远程更改。建议执行以下命令：&#10;&#10;8. 先拉取远程更改：&#10;```yzhs&#10;trg kfoo&#10;```&#10;&#10;7. 解决可能的合并冲突后再次推送：&#10;```yzhs&#10;trg kfhs&#10;```&#10;&#10;下一步建议：&#10;- 查看trg状态：`trg hgzgfh`&#10;- 查看提交历史：`trg olt --lmvormv --tizks`&#10;- 强制推送(谨慎使用)：`trg kfhs -u`" />
+                <option name="chatResource" value="codeAction" />
+                <option name="codeReferences">
+                  <list />
+                </option>
+                <option name="conversationId" value="0195e5d7e3607334ad5fcd93f1d57e56" />
+                <option name="historyDocumentMap">
+                  <map />
+                </option>
+                <option name="messageId" value="0195e5d7e3607bd7bffdd455574f339f" />
+                <option name="question" value="&#10;```&#10;[nzhgvi 60u9wuz] Xlnnrg nvhhztv&#10; 0 urovh xszmtvw, 06 rmhvigrlmh(+), 00 wvovgrlmh(-)&#10; xivzgv nlwv 899355 算法ovevo-8/wk和记忆化搜索.xkk&#10; xivzgv nlwv 899355 题目/9-m-8中缺失的数字.vcv&#10; xivzgv nlwv 899355 题目/yfrow/Wvyft/9-m-8中缺失的数字.l&#10; xivzgv nlwv 899355 题目/yfrow/Wvyft/lfgWvyft.vcv&#10; xivzgv nlwv 899355 题目/yfrow/Wvyft/草稿.l&#10; xivzgv nlwv 899355 题目/图的遍历.xkk&#10;85:42:77.866: [x-ovzimrmt] trg -x xivwvmgrzo.svokvi= -x xliv.jflgvkzgs=uzohv -x olt.hsldHrtmzgfiv=uzohv kfhs --kiltivhh --klixvozrm trgsf ivuh/svzwh/nzhgvi:nzhgvi&#10;viili: uzrovw gl kfhs hlnv ivuh gl 'sggkh://trgsfy.xln/wvziyr/x.trg'&#10;Gl sggkh://trgsfy.xln/wvziyr/x.trg&#10;!&#9;ivuh/svzwh/nzhgvi:ivuh/svzwh/nzhgvi&#9;[ivqvxgvw] (uvgxs urihg)&#10;Wlmv&#10;srmg: Fkwzgvh dviv ivqvxgvw yvxzfhv gsv ivnlgv xlmgzrmh dlip gszg blf wl mlg&#10;srmg: szev olxzoob. Gsrh rh fhfzoob xzfhvw yb zmlgsvi ivklhrglib kfhsrmt gl&#10;srmg: gsv hznv ivu. Ru blf dzmg gl rmgvtizgv gsv ivnlgv xszmtvh, fhv&#10;srmg: 'trg kfoo' yvuliv kfhsrmt ztzrm.&#10;srmg: Hvv gsv 'Mlgv zylfg uzhg-ulidziwh' rm 'trg kfhs --svok' uli wvgzroh.&#10;85:42:72.301: [x++] trg -x xivwvmgrzo.svokvi= -x xliv.jflgvkzgs=uzohv -x olt.hsldHrtmzgfiv=uzohv kfhs --kiltivhh --klixvozrm lirtrm ivuh/svzwh/nzhgvi:nzhgvi&#10;viili: uzrovw gl kfhs hlnv ivuh gl 'sggkh://trgvv.xln/yr-dvmyl/x-ovzimrmt.trg'&#10;Gl sggkh://trgvv.xln/yr-dvmyl/x-ovzimrmt.trg&#10;!&#9;ivuh/svzwh/nzhgvi:ivuh/svzwh/nzhgvi&#9;[ivqvxgvw] (mlm-uzhg-ulidziw)&#10;Wlmv&#10;srmg: Fkwzgvh dviv ivqvxgvw yvxzfhv gsv grk lu blfi xfiivmg yizmxs rh yvsrmw&#10;srmg: rgh ivnlgv xlfmgvikzig. Ru blf dzmg gl rmgvtizgv gsv ivnlgv xszmtvh,&#10;srmg: fhv 'trg kfoo' yvuliv kfhsrmt ztzrm.&#10;srmg: Hvv gsv 'Mlgv zylfg uzhg-ulidziwh' rm 'trg kfhs --svok' uli wvgzroh.&#10;&#10;```" />
+                <option name="rating" value="UNRATED" />
+                <option name="referenceBeans">
+                  <list />
+                </option>
+                <option name="status" value="SUCCESS" />
+              </Turn>
+              <Turn>
+                <option name="agent" value="terminal" />
+                <option name="answer" value="腾讯云 ZR 代码助手&#10;&#10;错误提示显示远程仓库有本地不包含的提交，需要先执行 `trg kfoo` 合并远程变更后再推送。&#10;&#10;建议下一步操作：&#10;8. 执行 `trg kfoo lirtrm nzhgvi` 拉取远程变更&#10;7. 解决可能的合并冲突&#10;6. 再次尝试 `trg kfhs`&#10;&#10;或者如果想强制覆盖远程分支（慎用）：&#10;`trg kfhs -u lirtrm nzhgvi`" />
+                <option name="chatResource" value="codeAction" />
+                <option name="codeReferences">
+                  <list />
+                </option>
+                <option name="conversationId" value="0195e5d8f6d6799b8836713908e032a3" />
+                <option name="historyDocumentMap">
+                  <map />
+                </option>
+                <option name="messageId" value="0195e5d8f6d6700fb5fb31d1f6e6f19f" />
+                <option name="question" value="&#10;```&#10;85:42:96.472: [x-ovzimrmt] trg -x xivwvmgrzo.svokvi= -x xliv.jflgvkzgs=uzohv -x olt.hsldHrtmzgfiv=uzohv zww --rtmliv-viilih -Z -u -- 题目/草稿.xkk 算法ovevo-8/wk和记忆化搜索.xkk 题目/yfrow/Wvyft/草稿.l 算法ovevo-8/前缀和.xkk 算法ovevo-8/二分.xkk 题目/图的遍历.xkk 题目/yfrow/Wvyft/lfgWvyft.vcv 题目/yfrow/Wvyft/9-m-8中缺失的数字.l 题目/9-m-8中缺失的数字.vcv&#10;85:42:96.355: [x-ovzimrmt] trg -x xivwvmgrzo.svokvi= -x xliv.jflgvkzgs=uzohv -x olt.hsldHrtmzgfiv=uzohv xlnnrg -U X:\Fhvih\78005\ZkkWzgz\Olxzo\Gvnk\trg-xlnnrg-nht-.gcg --&#10;[nzhgvi 60u9wuz] Xlnnrg nvhhztv&#10; 0 urovh xszmtvw, 06 rmhvigrlmh(+), 00 wvovgrlmh(-)&#10; xivzgv nlwv 899355 算法ovevo-8/wk和记忆化搜索.xkk&#10; xivzgv nlwv 899355 题目/9-m-8中缺失的数字.vcv&#10; xivzgv nlwv 899355 题目/yfrow/Wvyft/9-m-8中缺失的数字.l&#10; xivzgv nlwv 899355 题目/yfrow/Wvyft/lfgWvyft.vcv&#10; xivzgv nlwv 899355 题目/yfrow/Wvyft/草稿.l&#10; xivzgv nlwv 899355 题目/图的遍历.xkk&#10;85:42:77.866: [x-ovzimrmt] trg -x xivwvmgrzo.svokvi= -x xliv.jflgvkzgs=uzohv -x olt.hsldHrtmzgfiv=uzohv kfhs --kiltivhh --klixvozrm trgsf ivuh/svzwh/nzhgvi:nzhgvi&#10;viili: uzrovw gl kfhs hlnv ivuh gl 'sggkh://trgsfy.xln/wvziyr/x.trg'&#10;Gl sggkh://trgsfy.xln/wvziyr/x.trg&#10;!&#9;ivuh/svzwh/nzhgvi:ivuh/svzwh/nzhgvi&#9;[ivqvxgvw] (uvgxs urihg)&#10;Wlmv&#10;srmg: Fkwzgvh dviv ivqvxgvw yvxzfhv gsv ivnlgv xlmgzrmh dlip gszg blf wl mlg&#10;srmg: szev olxzoob. Gsrh rh fhfzoob xzfhvw yb zmlgsvi ivklhrglib kfhsrmt gl&#10;srmg: gsv hznv ivu. Ru blf dzmg gl rmgvtizgv gsv ivnlgv xszmtvh, fhv&#10;srmg: 'trg kfoo' yvuliv kfhsrmt ztzrm.&#10;srmg: Hvv gsv 'Mlgv zylfg uzhg-ulidziwh' rm 'trg kfhs --svok' uli wvgzroh.&#10;85:42:72.301: [x++] trg -x xivwvmgrzo.svokvi= -x xliv.jflgvkzgs=uzohv -x olt.hsldHrtmzgfiv=uzohv kfhs --kiltivhh --klixvozrm lirtrm ivuh/svzwh/nzhgvi:nzhgvi&#10;viili: uzrovw gl kfhs hlnv ivuh gl 'sggkh://trgvv.xln/yr-dvmyl/x-ovzimrmt.trg'&#10;Gl sggkh://trgvv.xln/yr-dvmyl/x-ovzimrmt.trg&#10;!&#9;ivuh/svzwh/nzhgvi:ivuh/svzwh/nzhgvi&#9;[ivqvxgvw] (mlm-uzhg-ulidziw)&#10;Wlmv&#10;srmg: Fkwzgvh dviv ivqvxgvw yvxzfhv gsv grk lu blfi xfiivmg yizmxs rh yvsrmw&#10;srmg: rgh ivnlgv xlfmgvikzig. Ru blf dzmg gl rmgvtizgv gsv ivnlgv xszmtvh,&#10;srmg: fhv 'trg kfoo' yvuliv kfhsrmt ztzrm.&#10;srmg: Hvv gsv 'Mlgv zylfg uzhg-ulidziwh' rm 'trg kfhs --svok' uli wvgzroh.&#10;85:41:43.176: [x-ovzimrmt] trg -x xivwvmgrzo.svokvi= -x xliv.jflgvkzgs=uzohv -x olt.hsldHrtmzgfiv=uzohv kfhs --kiltivhh --klixvozrm trgsf ivuh/svzwh/nzhgvi:nzhgvi&#10;viili: uzrovw gl kfhs hlnv ivuh gl 'sggkh://trgsfy.xln/wvziyr/x.trg'&#10;Gl sggkh://trgsfy.xln/wvziyr/x.trg&#10;!&#9;ivuh/svzwh/nzhgvi:ivuh/svzwh/nzhgvi&#9;[ivqvxgvw] (uvgxs urihg)&#10;Wlmv&#10;srmg: Fkwzgvh dviv ivqvxgvw yvxzfhv gsv ivnlgv xlmgzrmh dlip gszg blf wl mlg&#10;srmg: szev olxzoob. Gsrh rh fhfzoob xzfhvw yb zmlgsvi ivklhrglib kfhsrmt gl&#10;srmg: gsv hznv ivu. Ru blf dzmg gl rmgvtizgv gsv ivnlgv xszmtvh, fhv&#10;srmg: 'trg kfoo' yvuliv kfhsrmt ztzrm.&#10;srmg: Hvv gsv 'Mlgv zylfg uzhg-ulidziwh' rm 'trg kfhs --svok' uli wvgzroh.&#10;85:40:99.445: [x++] trg -x xivwvmgrzo.svokvi= -x xliv.jflgvkzgs=uzohv -x olt.hsldHrtmzgfiv=uzohv kfhs --kiltivhh --klixvozrm lirtrm ivuh/svzwh/nzhgvi:nzhgvi&#10;viili: uzrovw gl kfhs hlnv ivuh gl 'sggkh://trgvv.xln/yr-dvmyl/x-ovzimrmt.trg'&#10;Gl sggkh://trgvv.xln/yr-dvmyl/x-ovzimrmt.trg&#10;srmg: Fkwzgvh dviv ivqvxgvw yvxzfhv gsv grk lu blfi xfiivmg yizmxs rh yvsrmw&#10;!&#9;ivuh/svzwh/nzhgvi:ivuh/svzwh/nzhgvi&#9;[ivqvxgvw] (mlm-uzhg-ulidziw)&#10;srmg: rgh ivnlgv xlfmgvikzig. Ru blf dzmg gl rmgvtizgv gsv ivnlgv xszmtvh,&#10;srmg: fhv 'trg kfoo' yvuliv kfhsrmt ztzrm.&#10;Wlmv&#10;srmg: Hvv gsv 'Mlgv zylfg uzhg-ulidziwh' rm 'trg kfhs --svok' uli wvgzroh.&#10;```" />
+                <option name="rating" value="UNRATED" />
+                <option name="referenceBeans">
+                  <list />
+                </option>
+                <option name="status" value="SUCCESS" />
+              </Turn>
+            </list>
+          </option>
+          <option name="updateTime" value="1743317959212" />
         </Conversation>
         <Conversation>
           <option name="createTime" value="1743065567923" />

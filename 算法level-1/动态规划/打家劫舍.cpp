@@ -19,9 +19,6 @@ int dfs(int x)
 //mem[i]存的是：从第i个店铺开始（i~n）能获取的最大价值
 int main()
 {
-    cin>>T;
-    while(T--)
-    {
         cin>>n;
         for(int i=1;i<=n;i++)
         {
@@ -35,13 +32,7 @@ int main()
         {
             f[i]=max(f[i+1],f[i+2]+home[i]);//递推的公式就是递归向下的公式
         }
-        //或者正序枚举
-//        for(int i=1;i<=n;i--)
-//        {
-//            f[i]=max(f[i-1],f[i-2]+home[i]);//递推的公式就是递归向下的公式
-//        }
         cout<<f[1]<<endl;
-    }
     return 0;
 }
 

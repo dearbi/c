@@ -26,6 +26,7 @@ void SListTest2()
 {
     SLTNode* plist =NULL;
     SLTPushBack(&plist,1);
+    SLTPushFront(&plist,2);
     SLTPrint(plist);
 
 }
@@ -33,5 +34,6 @@ int main()
 {
 //  SListTest();
     SListTest2();
+
     return 0;
 }

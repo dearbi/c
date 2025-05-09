@@ -26,6 +26,7 @@ void SLTPrint(SLTNode* phead)
 
 SLTNode *SLTBuyNode(SlistDataType x)
 {
+
     SLTNode *newnode=(SLTNode*) malloc(sizeof(SLTNode));
     if(newnode==NULL)
     {
@@ -39,6 +40,7 @@ SLTNode *SLTBuyNode(SlistDataType x)
 
 void SLTPushBack(SLTNode** pphead,SlistDataType x)
 {
+    assert(pphead);
     SLTNode* newnode= SLTBuyNode(x);
 
     if(*pphead==NULL)
@@ -56,7 +58,35 @@ void SLTPushBack(SLTNode** pphead,SlistDataType x)
 }
 
 
-void SLTPushFront(SLTNode** phead,SlistDataType x)
+void SLTPushFront(SLTNode** pphead,SlistDataType x)
 {
+    assert(pphead);
+    SLTNode *newnnode=  SLTBuyNode(x);
+    newnnode->next=*pphead;
+    *pphead=newnnode;
+}
 
+//尾删
+void SLTPopBack(SLTNode** pphead)
+{
+    assert(pphead);
+    if(*pphead==NULL)
+    {
+        return;
+    }
+    else if((*pphead)->next==NULL)
+    {
+        free(*pphead);
+        *pphead=NULL;
+    }
+    else
+    {
+        SLTNode* ptail=*pphead;
+        while(ptail->next->next!=NULL)
+        {
+            ptail=ptail->next;
+        }
+        free(ptail->next);
+        ptail->next=NULL;
+    }
 }

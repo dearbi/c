@@ -2,7 +2,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int N=10010;
-int n,T;
+int n;
+//全局变量中初始化数组默认值为0，但是函数参数中初始化数组是随机的，所以需要初始化
 int home[N];
 int mem[N];
 int f[N];

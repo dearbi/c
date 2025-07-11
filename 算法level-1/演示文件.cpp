@@ -1,36 +1,44 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int N=1010;
-int mem[N];
-//1.dfs 2.记忆化搜索 3.递推循环
-int dfs(int n)
+int mem[N][N];
+int a[N][N];
+int f[N][N];
+int n;
+int dfs(int x1,int y1)
 {
-    //记忆化搜索
-    if(mem[n]) return mem[n];
+    if(mem[x1][y1]) return mem[x1][y1];
     int sum=0;
-    if(n==1) return 1;
-    if(n==2) return 2;
+    if(x1>n||y1>n)
+        return 0;
     else
-        sum=dfs(n-1)+dfs(n-2);
-    mem[n]=sum;
+        sum=max(dfs(x1+1,y1),dfs(x1+1,y1+1))+a[x1][y1];
+    mem[x1][y1]=sum;
     return sum;
 }
+//dfs怎么改到递推的形式
+//所有的返回值都需要体现
+//原来dfs的sum和dfs本身都需要成数组的形式
+
 int main()
 {
-    int n;cin>>n;
-    int res=dfs(n);
-    cout<<res<<endl;
-    //改递推：dfs改递推需要保留/什么地方？
-    //1、所有有返回值的地方要写
-    //2、sum和dfs都换成数组
-    //循环从头还是末尾开始遍历？
-    //  看画的递归搜索树是从哪开始的
-
+    cin>>n;
     for(int i=1;i<=n;i++)
     {
-        if(i==1) mem[i]=1;
-        else if(i==2) mem[i]=2;
-        else mem[i]=mem[i-1]+mem[i-2];
+        for(int j=1;j<=i;j++)
+            cin>>a[i][j];
     }
+    int res=dfs(1,1);
+    cout<<res<<endl;
+
+    for(int i=n;i>=1;i--)
+    {
+        for(int j=1;j<=i;j++)
+        {
+            f[i][j]=max(f[i+1][j],f[i+1][j+1])+a[i][j];
+        }
+    }
+    cout<<f[1][1]<<endl;
+
     return 0;
 }

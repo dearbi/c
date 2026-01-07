@@ -1,0 +1,3 @@
+[submodule "c-learning"]
+	path = c-learning
+	url = git@github.com:dearbi/c.git

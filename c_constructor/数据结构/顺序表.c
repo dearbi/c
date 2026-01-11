@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//顺序表结构体
 typedef struct{
 	int data[100];
 	int length;
 }SeqList;
+
 
 //初始化长度
 void initSeqlist(SeqList* list){

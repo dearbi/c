@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
-typedef struct Stack{
+typedef struct{
 	int data[100];
 	int top;
 }Stack;
